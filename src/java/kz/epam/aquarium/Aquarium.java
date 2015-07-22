@@ -13,13 +13,13 @@ public class Aquarium {
     }
 
     private String getAquariumContent() {
-        StringBuilder resultAquariumContnt = new StringBuilder("[ ");
+        StringBuilder resultAquariumContent = new StringBuilder("[ ");
         for (AquariumItem aquariumItem : aquariumItems)
-            resultAquariumContnt.append(aquariumItem.getClass().getSimpleName())
+            resultAquariumContent.append(aquariumItem.getClass().getSimpleName())
                     .append(":").append(aquariumItem.getName()).append(":")
                     .append(aquariumItem.getPrice()).append("; ");
-        resultAquariumContnt.append("]");
-        return resultAquariumContnt.toString();
+        resultAquariumContent.append("]");
+        return resultAquariumContent.toString();
     }
 
     private double getTotalPrice() {
